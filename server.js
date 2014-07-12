@@ -14,7 +14,7 @@ app.configure(function(){
 		app.use(express.bodyParser());
 });
 
-// define model ======
+// model ======
 
 var Todo = mongoose.model('Todo', {
 		text: String
@@ -74,6 +74,13 @@ var Todo = mongoose.model('Todo', {
 								res.json(todos);
 						});
 				});
+		});
+
+
+		// application ------
+
+		app.get('*', function(req, res){
+				res.sendfile('./public/index.html'); // load single view file
 		});
 
 // listen (start app with node server.js) ======
