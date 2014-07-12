@@ -3,7 +3,7 @@
 	"version" : "0.0.0",
 	"description" : "simple todo application",
 	"main" : "server.js",
-	"author" : "Scotch",
+	"author" : "Sahan",
 	"dependencies" : {
 		"express" : "~3.4.4",
 		"mongoose" : "~3.6.2"
